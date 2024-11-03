@@ -1,0 +1,178 @@
+# nmap -O 192.168.0.1
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-11-03 19:59 MSK
+Nmap scan report for 192.168.0.1
+Host is up (0.0020s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE
+53/tcp   open  domain
+80/tcp   open  http
+81/tcp   open  hosts2-ns
+443/tcp  open  https
+4443/tcp open  pharos
+4445/tcp open  upnotifyp
+MAC Address: (mac) (D-Link International)
+Device type: broadband router
+Running: Linux 3.X
+OS CPE: cpe:/o:linux:linux_kernel:3.10
+OS details: DD-WRT v24 or v30 (Linux 3.10)
+Network Distance: 1 hop
+
+OS detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 8.17 seconds
+--------------------------------------------------
+# nmap -sV --script vulners 192.168.0.1
+Starting Nmap 7.95 ( https://nmap.org ) at 2024-11-03 20:02 MSK
+Nmap scan report for 192.168.0.1
+Host is up (0.0043s latency).
+Not shown: 994 closed tcp ports (reset)
+PORT     STATE SERVICE        VERSION
+53/tcp   open  domain         dnsmasq UNKNOWN
+80/tcp   open  http
+| fingerprint-strings: 
+|   FourOhFourRequest: 
+|     HTTP/1.1 200 OK
+|     Content-Security-Policy: default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; frame-ancestors 'self'
+|     X-Frame-Options: SAMEORIGIN
+|     X-XSS-Protection: 1; mode=block
+|     X-Content-Type-Options: nosniff
+|     Date: Sun, 03 Nov 2024 17:02:57 GMT
+|     Etag: "5eda686d.1676"
+|     Content-Type: text/html
+|     Content-Length: 1676
+|     Connection: close
+|     Accept-Ranges: bytes
+|     <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" ng-app="error404" ng-controller="Error404Ctrl"><head><title ng-bind="'error404_title' | translate"></title><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta http-equiv="pragma" content="no-cache"><meta http-equiv="cache-control" content="no-cache"><me
+|   GenericLines: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 42
+|     Date: Sun, 03 Nov 2024 17:02:57 GMT
+|     Connection: close
+|     Error 500: Server Error
+|     request: [
+|   GetRequest, HTTPOptions: 
+|     HTTP/1.1 303 See other
+|     Location: /admin/index.html
+|   RTSPRequest: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 46
+|     Date: Sun, 03 Nov 2024 17:02:57 GMT
+|     Connection: close
+|     Error 500: Server Error
+|     request: [OPTIONS]
+|   X11Probe: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 48
+|     Date: Sun, 03 Nov 2024 17:02:57 GMT
+|     Connection: close
+|     Error 500: Server Error
+|_    Client closed connection
+81/tcp   open  hosts2-ns?
+| fingerprint-strings: 
+|   DNSStatusRequestTCP, DNSVersionBindReqTCP: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 48
+|     Date: Sun, 03 Nov 2024 17:03:05 GMT
+|     Connection: close
+|     Error 500: Server Error
+|     Client closed connection
+|   GenericLines: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 42
+|     Date: Sun, 03 Nov 2024 17:03:05 GMT
+|     Connection: close
+|     Error 500: Server Error
+|     request: [
+|   HTTPOptions: 
+|     HTTP/1.1 303 See other
+|     Location: http://192.168.0.1/trouble/index.html?redirect_id=2e88b7039593b546f486c77b4d1dcce3
+|   RPCCheck: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 48
+|     Date: Sun, 03 Nov 2024 17:02:57 GMT
+|     Connection: close
+|     Error 500: Server Error
+|     Client closed connection
+|   RTSPRequest: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 46
+|     Date: Sun, 03 Nov 2024 17:03:05 GMT
+|     Connection: close
+|     Error 500: Server Error
+|     request: [OPTIONS]
+|   SSLSessionReq, TLSSessionReq, TerminalServerCookie: 
+|     HTTP/1.1 500 Server Error
+|     Content-Length: 48
+|     Date: Sun, 03 Nov 2024 17:03:12 GMT
+|     Connection: close
+|     Error 500: Server Error
+|_    Client closed connection
+443/tcp  open  ssl/https?
+4443/tcp open  ssl/pharos?
+4445/tcp open  ssl/upnotifyp?
+2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port80-TCP:V=7.95%I=7%D=11/3%Time=6727ACBC%P=x86_64-pc-linux-gnu%r(GetR
+SF:equest,37,"HTTP/1\.1\x20303\x20See\x20other\r\nLocation:\x20/admin/inde
+SF:x\.html\r\n\r\n")%r(HTTPOptions,37,"HTTP/1\.1\x20303\x20See\x20other\r\
+SF:nLocation:\x20/admin/index\.html\r\n\r\n")%r(RTSPRequest,97,"HTTP/1\.1\
+SF:x20500\x20Server\x20Error\r\nContent-Length:\x2046\r\nDate:\x20Sun,\x20
+SF:03\x20Nov\x202024\x2017:02:57\x20GMT\r\nConnection:\x20close\r\n\r\nErr
+SF:or\x20500:\x20Server\x20Error\nBad\x20request:\x20\[OPTIONS\]")%r(X11Pr
+SF:obe,99,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x2048\r\
+SF:nDate:\x20Sun,\x2003\x20Nov\x202024\x2017:02:57\x20GMT\r\nConnection:\x
+SF:20close\r\n\r\nError\x20500:\x20Server\x20Error\nClient\x20closed\x20co
+SF:nnection")%r(FourOhFourRequest,825,"HTTP/1\.1\x20200\x20OK\r\nContent-S
+SF:ecurity-Policy:\x20default-src\x20\*;\x20style-src\x20'self'\x20'unsafe
+SF:-inline';\x20script-src\x20'self'\x20'unsafe-inline'\x20'unsafe-eval';\
+SF:x20frame-ancestors\x20'self'\r\nX-Frame-Options:\x20SAMEORIGIN\r\nX-XSS
+SF:-Protection:\x201;\x20mode=block\r\nX-Content-Type-Options:\x20nosniff\
+SF:r\nDate:\x20Sun,\x2003\x20Nov\x202024\x2017:02:57\x20GMT\r\nEtag:\x20\"
+SF:5eda686d\.1676\"\r\nContent-Type:\x20text/html\r\nContent-Length:\x2016
+SF:76\r\nConnection:\x20close\r\nAccept-Ranges:\x20bytes\r\n\r\n<!DOCTYPE\
+SF:x20html\x20PUBLIC\x20\"-//W3C//DTD\x20XHTML\x201\.0\x20Transitional//EN
+SF:\"\x20\"http://www\.w3\.org/TR/xhtml1/DTD/xhtml1-transitional\.dtd\"><h
+SF:tml\x20xmlns=\"http://www\.w3\.org/1999/xhtml\"\x20ng-app=\"error404\"\
+SF:x20ng-controller=\"Error404Ctrl\"><head><title\x20ng-bind=\"'error404_t
+SF:itle'\x20\|\x20translate\"></title><meta\x20http-equiv=\"Content-Type\"
+SF:\x20content=\"text/html;\x20charset=utf-8\"><meta\x20http-equiv=\"X-UA-
+SF:Compatible\"\x20content=\"IE=edge\"><meta\x20http-equiv=\"pragma\"\x20c
+SF:ontent=\"no-cache\"><meta\x20http-equiv=\"cache-control\"\x20content=\"
+SF:no-cache\"><me")%r(GenericLines,93,"HTTP/1\.1\x20500\x20Server\x20Error
+SF:\r\nContent-Length:\x2042\r\nDate:\x20Sun,\x2003\x20Nov\x202024\x2017:0
+SF:2:57\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20E
+SF:rror\nBad\x20request:\x20\[\r\n\r\]");
+==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
+SF-Port81-TCP:V=7.95%I=7%D=11/3%Time=6727ACC1%P=x86_64-pc-linux-gnu%r(HTTP
+SF:Options,78,"HTTP/1\.1\x20303\x20See\x20other\r\nLocation:\x20http://192
+SF:\.168\.0\.1/trouble/index\.html\?redirect_id=2e88b7039593b546f486c77b4d
+SF:1dcce3\r\n\r\n")%r(RPCCheck,99,"HTTP/1\.1\x20500\x20Server\x20Error\r\n
+SF:Content-Length:\x2048\r\nDate:\x20Sun,\x2003\x20Nov\x202024\x2017:02:57
+SF:\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Error
+SF:\nClient\x20closed\x20connection")%r(GenericLines,93,"HTTP/1\.1\x20500\
+SF:x20Server\x20Error\r\nContent-Length:\x2042\r\nDate:\x20Sun,\x2003\x20N
+SF:ov\x202024\x2017:03:05\x20GMT\r\nConnection:\x20close\r\n\r\nError\x205
+SF:00:\x20Server\x20Error\nBad\x20request:\x20\[\r\n\r\]")%r(RTSPRequest,9
+SF:7,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x2046\r\nDate
+SF::\x20Sun,\x2003\x20Nov\x202024\x2017:03:05\x20GMT\r\nConnection:\x20clo
+SF:se\r\n\r\nError\x20500:\x20Server\x20Error\nBad\x20request:\x20\[OPTION
+SF:S\]")%r(DNSVersionBindReqTCP,99,"HTTP/1\.1\x20500\x20Server\x20Error\r\
+SF:nContent-Length:\x2048\r\nDate:\x20Sun,\x2003\x20Nov\x202024\x2017:03:0
+SF:5\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Server\x20Erro
+SF:r\nClient\x20closed\x20connection")%r(DNSStatusRequestTCP,99,"HTTP/1\.1
+SF:\x20500\x20Server\x20Error\r\nContent-Length:\x2048\r\nDate:\x20Sun,\x2
+SF:003\x20Nov\x202024\x2017:03:05\x20GMT\r\nConnection:\x20close\r\n\r\nEr
+SF:ror\x20500:\x20Server\x20Error\nClient\x20closed\x20connection")%r(SSLS
+SF:essionReq,99,"HTTP/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x2
+SF:048\r\nDate:\x20Sun,\x2003\x20Nov\x202024\x2017:03:12\x20GMT\r\nConnect
+SF:ion:\x20close\r\n\r\nError\x20500:\x20Server\x20Error\nClient\x20closed
+SF:\x20connection")%r(TerminalServerCookie,99,"HTTP/1\.1\x20500\x20Server\
+SF:x20Error\r\nContent-Length:\x2048\r\nDate:\x20Sun,\x2003\x20Nov\x202024
+SF:\x2017:03:12\x20GMT\r\nConnection:\x20close\r\n\r\nError\x20500:\x20Ser
+SF:ver\x20Error\nClient\x20closed\x20connection")%r(TLSSessionReq,99,"HTTP
+SF:/1\.1\x20500\x20Server\x20Error\r\nContent-Length:\x2048\r\nDate:\x20Su
+SF:n,\x2003\x20Nov\x202024\x2017:03:12\x20GMT\r\nConnection:\x20close\r\n\
+SF:r\nError\x20500:\x20Server\x20Error\nClient\x20closed\x20connection");
+MAC Address: (mac) (D-Link International)
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 33.61 seconds

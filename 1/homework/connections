@@ -1,0 +1,131 @@
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State      
+tcp        0      0 MbIcJIuTeJIb:22355      0.0.0.0:*               LISTEN     
+tcp        0      0 localhost:22355         0.0.0.0:*               LISTEN     
+tcp        0      0 localhost:domain        0.0.0.0:*               LISTEN     
+tcp        0      0 localhost:ipps          0.0.0.0:*               LISTEN     
+tcp        0      0 localhost:socks         0.0.0.0:*               LISTEN     
+tcp        0      0 localhost:socks         localhost:43862         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:58026         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:46592         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:51488      149.154.167.41:https    ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:48450      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:37858         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:48400         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:43862         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:37858         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:48430         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:55722      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:socks         localhost:60126         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:39338      91.105.192.100:https    ESTABLISHED
+tcp        0      0 localhost:34626         localhost:socks         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:45630      91.105.192.100:https    ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:48806      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:48470      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:39310      91.105.192.100:https    ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:47022      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:43396      static.242.127.91:59284 TIME_WAIT  
+tcp        0      0 localhost:41860         localhost:socks         TIME_WAIT  
+tcp        0      0 localhost:34086         localhost:socks         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:47030      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:socks         localhost:60144         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:48416         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:47026      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:59642         localhost:socks         TIME_WAIT  
+tcp        0      0 localhost:socks         localhost:38474         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:57956         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:57960         ESTABLISHED
+tcp        0      0 localhost:38980         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:46592         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:37828         ESTABLISHED
+tcp        0      0 localhost:57956         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:34596         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:59488      static.242.127.91:59284 TIME_WAIT  
+tcp        0      0 localhost:58036         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:58018         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:48430         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:38980         ESTABLISHED
+tcp        0      0 localhost:41848         localhost:socks         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:52288      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:54868         localhost:socks         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:48466      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:35042         localhost:socks         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:43376      static.242.127.91:59284 TIME_WAIT  
+tcp        0      0 MbIcJIuTeJIb:36860      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:48394      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:50630      91.105.192.100:https    ESTABLISHED
+tcp        0      0 localhost:socks         localhost:60920         ESTABLISHED
+tcp        0      0 localhost:59626         localhost:socks         TIME_WAIT  
+tcp        0      0 localhost:48416         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:34086         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:41016      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:socks         localhost:48400         ESTABLISHED
+tcp        0      0 localhost:37828         localhost:socks         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:50628      91.105.192.100:https    ESTABLISHED
+tcp        0      0 localhost:socks         localhost:57970         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:41898      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:33576      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:41106      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:48398      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:60126         localhost:socks         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:37842      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:socks         localhost:34612         ESTABLISHED
+tcp        0      0 localhost:58026         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:34612         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:34626         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:48632      151.101.246.217:https   ESTABLISHED
+tcp        0      0 localhost:socks         localhost:54868         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:35042         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:51474      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:53432         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:58030         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:48456      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:43240         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:57970         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:60920         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:38474         localhost:socks         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:55702      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:45616      91.105.192.100:https    ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:41090      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:42410      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:32890      149.154.167.51:https    ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:56472      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:41766      194.85.169.40:https     ESTABLISHED
+tcp        0      0 localhost:34596         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:41848         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:38132      149.154.167.51:https    ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:41086      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:60144         localhost:socks         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:58018         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:39328      91.105.192.100:https    ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:59480      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:56430      srv67-132-240-87.:https ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:48422      static.242.127.91:59284 ESTABLISHED
+tcp        0    260 MbIcJIuTeJIb:41180      srv3-56-213-95.vk:https ESTABLISHED
+tcp        0      0 localhost:58030         localhost:socks         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:40142      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:52332      static.242.127.91:59284 ESTABLISHED
+tcp        0      0 localhost:socks         localhost:43240         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:58036         ESTABLISHED
+tcp        0      0 localhost:socks         localhost:53432         ESTABLISHED
+tcp        0      0 MbIcJIuTeJIb:39292      91.105.192.100:https    ESTABLISHED
+tcp        0      0 localhost:57960         localhost:socks         ESTABLISHED
+tcp6       0      0 localhost:22355         [::]:*                  LISTEN     
+tcp6       0      0 MbIcJIuTeJIb:22355      [::]:*                  LISTEN     
+udp        0      0 MbIcJIuTeJIb:47634      0.0.0.0:*                          
+udp        0      0 localhost:domain        0.0.0.0:*                          
+udp        0      0 MbIcJIuTeJIb:bootpc     _gateway:bootps         ESTABLISHED
+udp        0      0 localhost:323           0.0.0.0:*                          
+udp        0      0 localhost:socks         0.0.0.0:*                          
+udp        0      0 MbIcJIuTeJIb:22355      0.0.0.0:*                          
+udp        0      0 localhost:22355         0.0.0.0:*                          
+udp        0      0 0.0.0.0:plysrv-https    0.0.0.0:*                          
+udp        0      0 0.0.0.0:plysrv-https    0.0.0.0:*                          
+udp6       0      0 localhost:323           [::]:*                             
+udp6       0      0 MbIcJIuTeJIb:22355      [::]:*                             
+udp6       0      0 localhost:22355         [::]:*                             
+udp6       0      0 [::]:plysrv-https       [::]:*                             
+udp6       0      0 [::]:plysrv-https       [::]:*                             
+
+Most active:
+tcp        0    260 MbIcJIuTeJIb:41180      srv3-56-213-95.vk:https ESTABLISHED

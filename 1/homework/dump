@@ -1,0 +1,13 @@
+# tcpdump -i wlp3s0 -G 60 -W 1 -w /tmp/dump
+tcpdump: listening on wlp3s0, link-type EN10MB (Ethernet), snapshot length 262144 bytes
+Maximum file limit reached: 1
+10579 packets captured
+10775 packets received by filter
+0 packets dropped by kernel
+# tcpdump -r /tmp/dump | awk '{ print $6 }' | sort | uniq -c
+reading from file /tmp/dump, link-type EN10MB (Ethernet), snapshot length 262144
+      2 (my wifi mac)
+  10275 Flags # that's tcp
+     12 ICMP
+      2 tell
+    287 UDP,

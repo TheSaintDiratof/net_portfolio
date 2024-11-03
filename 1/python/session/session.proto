@@ -1,0 +1,22 @@
+// Указываем, что используем синтаксис версии 3 Protocol Buffers
+syntax = "proto3";
+
+// Определяем сервис SessionManager
+service SessionManager {
+    // Определяем метод StartSession, который принимает SessionRequest и возвращает SessionResponse
+    rpc StartSession (SessionRequest) returns (SessionResponse);
+
+    // Определяем метод EndSession, аналогичный StartSession
+    rpc EndSession (SessionRequest) returns (SessionResponse);
+}
+
+// Описание структуры сообщения для запроса сессии
+message SessionRequest {
+    string session_id = 1; // Поле session_id, которое содержит идентификатор сессии
+}
+
+// Описание структуры сообщения для ответа
+message SessionResponse {
+    string message = 1; // Поле message, которое будет содержать сообщение о статусе
+}
+
